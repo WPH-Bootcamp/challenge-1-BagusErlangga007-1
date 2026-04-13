@@ -1,1 +1,58 @@
 /* code here */
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.logo {
+  width: 200px;
+}
+
+.container_header {
+  height: 100vh;
+  background-image: url("../assets/motor_header.png");
+  background-size: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  position: relative;
+}
+.header_content {
+}
+nav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  margin-right: 20px;
+  display: flex;
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
