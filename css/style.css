@@ -8,35 +8,6 @@ body {
 .logo {
   width: 200px;
 }
-
-.container_header {
-  height: 100vh;
-  background-image: url("../assets/motor_header.png");
-  background-size: 1000px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  position: relative;
-}
-.header_content {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  align-items: center;
-  width: 100%;
-  height: 30%;
-}
-.cta-button {
-  width: 300px;
-  border-radius: 100px;
-
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  margin-top: 20px;
-}
 nav {
   background-color: #333;
   overflow: hidden;
@@ -57,6 +28,10 @@ nav ul li {
   float: left;
 }
 
+h2 {
+  font-size: 50px;
+}
+
 nav ul li a {
   display: block;
   padding: 14px 16px;
@@ -69,12 +44,80 @@ nav ul li a:hover {
   background-color: #111;
 }
 
-.features {
-  text-align: center;
+.container_header {
+  height: 100vh;
+  background-image: url("../assets/motor_headers.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  position: relative;
+}
+.header_content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: center;
+  color: #fff;
+}
+.header_content h1 {
+  font-size: 120px;
+  margin-bottom: 20px;
+}
+.header_content p {
+  font-size: 28px;
+  margin: 0;
+}
+.header_content .cta-button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cta-button {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#btnbook {
+  background-color: #00000fff;
+}
+#btnbook:hover {
+  background-color: #218838;
+}
+
+#btnexplore:hover {
+  background-color: #ffffff;
+}
+#btnexplore {
+  background-color: #ff5733;
+}
+.highlight {
+  color: #ff5733;
+}
+
+.fleet {
+  text-align: center;
   padding: 50px 20px;
+}
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .feature-item {
@@ -87,7 +130,33 @@ nav ul li a:hover {
   border: solid 1px #444;
   background-color: #222;
   padding: 20px;
-  border-radius: 10px;
+}
+.performances {
+  display: flex;
+  flex-direction: row;
+  background-color: #0e0e0e;
+  padding: 50px 20px;
+  text-align: center;
+}
+.performance-item {
+  width: 30%;
+  margin: 0 10px;
+  padding: 20px;
+}
+.kinetic_innovation {
+  background-color: #0e0e0e;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+.kinetic_content {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.kinetic_item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 }
 .contact {
   background-color: #222;
@@ -118,4 +187,47 @@ textarea.form-input {
 
 .cta-button:hover {
   background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+  .feature-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .contact {
+    padding: 20px;
+  }
+  .form-input {
+    width: 80%;
+  }
+  .contact .cta-button {
+    width: 80%;
+  }
+  textarea.form-input {
+    height: 200px;
+  }
+
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+
+  .container_header {
+    height: 100vh;
+    background-image: url("../assets/motor_header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+  }
+
+  .header_content {
+    top: 50%;
+    left: 30%;
+    align-items: center;
+    height: 30%;
+  }
 }
